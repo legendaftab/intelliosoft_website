@@ -1,0 +1,264 @@
+/* .subscription-section {
+    background-color: #f4f6f8;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .subscription-section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subscription-section p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .subscription-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .form-fields {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+  }
+  
+  .form-field input {
+    width: 200px;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 1rem;
+  }
+  
+  .next-btn {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  
+  .dot.active {
+    background-color: #333;
+  }
+  
+  .dot.complete {
+    background-color: #0078d4;
+  }
+   */
+
+/* Statistics Section */
+
+.subscription-section {
+  background-color: #f4f6f8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.subscription-section h2 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscription-section p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subscription-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* Enable wrapping for smaller screens */
+  gap: 1rem;
+}
+
+.form-fields {
+  display: flex;
+  flex-wrap: wrap;
+  /* Stack fields on smaller screens */
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.form-field input {
+  width: 200px;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  font-size: 1rem;
+}
+
+.next-btn {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
+.dot.complete {
+  background-color: #0078d4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .form-fields {
+    gap: 1rem;
+    /* Reduce gap for tablets */
+  }
+
+  .form-field input {
+    width: 180px;
+    /* Reduce input width for tablets */
+  }
+
+  .subscription-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .subscription-section p {
+    font-size: 0.95rem;
+  }
+
+  .next-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscription-form {
+    flex-direction: column;
+    /* Stack form fields and button vertically */
+    gap: 1.5rem;
+  }
+
+  .form-fields {
+    justify-content: center;
+    /* Center form fields */
+  }
+
+  .form-field input {
+    width: 100%;
+    /* Make inputs full width */
+    max-width: 300px;
+    /* Limit max width */
+  }
+
+  .subscription-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .subscription-section p {
+    font-size: 0.9rem;
+  }
+
+  .next-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-section {
+    padding: 1.5rem;
+  }
+
+  .form-fields {
+    gap: 1rem;
+    /* Reduce gap further for mobile */
+  }
+
+  .form-field input {
+    width: 100%;
+    /* Full width for small screens */
+    max-width: 250px;
+  }
+
+  .subscription-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .subscription-section p {
+    font-size: 0.85rem;
+  }
+
+  .next-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .pagination {
+    gap: 0.4rem;
+    /* Reduce dot spacing */
+  }
+
+  .dot {
+    width: 8px;
+    /* Smaller dots for mobile */
+    height: 8px;
+  }
+}

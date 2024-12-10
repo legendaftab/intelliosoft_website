@@ -1,0 +1,243 @@
+/* News Banner Section
+.news-banner {
+    background-color: #5a2e8a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .news-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .nav-arrow {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .news-title {
+    flex: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  .read-more {
+    background: white;
+    color: #5a2e8a;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+  
+  .content-text {
+    max-width: 50%;
+  }
+  
+  .content-text h1 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content-text p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .learn-more-btn {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .content-image img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+   */
+
+   /* News Banner Section */
+.news-banner {
+  background-color: #5a2e8a;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.news-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Ensure wrapping for smaller screens */
+  gap: 1rem;
+  text-align: center;
+}
+
+.news-title {
+  flex: 1;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.read-more {
+  background: white;
+  color: #5a2e8a;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Main Content Section */
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+  padding: 2rem;
+  gap: 2rem; /* Add spacing between elements when wrapped */
+}
+
+.content-text {
+  max-width: 50%;
+  flex: 1; /* Ensure proper size on smaller screens */
+}
+
+.content-text h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.learn-more-btn {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.content-image img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .news-title {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .main-content {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text */
+  }
+
+  .content-text {
+    max-width: 100%;
+  }
+
+  .content-image img {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .news-content {
+    flex-direction: column; /* Stack news content vertically */
+    text-align: center;
+  }
+
+  .news-title {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+    padding: 0.4rem 1rem;
+  }
+
+  .main-content {
+    padding: 1.5rem;
+  }
+
+  .content-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .content-text p {
+    font-size: 0.95rem;
+  }
+
+  .learn-more-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-title {
+    font-size: 0.8rem;
+  }
+
+  .read-more {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .content-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-text p {
+    font-size: 0.85rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .content-image img {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}

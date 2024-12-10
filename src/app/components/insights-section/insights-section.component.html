@@ -1,0 +1,12 @@
+<div class="insights-section">
+    <h2>Insights from Intellisoft</h2>
+    <div class="insights-container">
+      <div class="insight-card" *ngFor="let insight of insights">
+        <img [src]="insight.image" alt="{{ insight.title }}" class="insight-image" />
+        <h3>{{ insight.title }}</h3>
+        <p>{{ insight.description }}</p>
+        <a href="#" class="read-more">READ MORE →</a>
+      </div>
+    </div>
+  </div>
+  

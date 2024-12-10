@@ -1,0 +1,43 @@
+<!-- <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="assets/logo/logo.png" alt="Intellisoft Technology Logo" class="logo" />
+    </div>
+    <ul class="navbar-links">
+      <li><a href="#">Offerings</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#">Newsroom</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <a href="#" class="contact-us">Contact Us</a>
+      <button class="search-btn">
+        <span class="material-icons">search</span>
+      </button>
+    </div>
+  </nav> -->
+  
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="assets/logo/logo.png" alt="Intellisoft Technology Logo" class="logo" />
+    </div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="navbar-links" [ngClass]="{ show: isMenuOpen }">
+      <li><a href="#">Offerings</a></li>
+      <li><a href="#">Industries</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Insights</a></li>
+      <li><a href="#">Newsroom</a></li>
+    </ul>
+    <div class="navbar-actions">
+      <a href="#" class="contact-us">Contact Us</a>
+      <button class="search-btn">
+        <span class="material-icons">search</span>
+      </button>
+    </div>
+  </nav>
+  
